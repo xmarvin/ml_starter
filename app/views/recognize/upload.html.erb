@@ -1,0 +1,13 @@
+Result: <%= @success %>
+<% if @predictions.present? %>
+  <ul>
+    <% @predictions.each do |prediction| %>
+      <li>
+        <%= prediction %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<hr/>
+<%= link_to 'Try another image', recognize_path %>

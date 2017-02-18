@@ -1,0 +1,20 @@
+== README
+
+I was interested how to machine learning such as image recognition in Ruby on Rails.
+My quick search gave me no results, and I decided to create some template to start
+
+* Setup
+
+1) > bundle install
+2) We need python and ml libraries
+   > pip install tensorflow
+   > pip install keras
+
+3)  We need cache trained weights for neural net and verify it works
+    > python ./ml/xcpetion.py
+
+
+* Run
+    Firstly we need to start python service:
+    > python ./ml/service.py
+    > rails s
