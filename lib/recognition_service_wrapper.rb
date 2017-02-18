@@ -10,7 +10,6 @@ class RecognitionServiceWrapper
     Rails.logger.error("[RecognitionServiceWrapper] Error: #{ex.message}")
     nil
   ensure
-    puts "*1000000"
     socket.close if socket
   end
 end
